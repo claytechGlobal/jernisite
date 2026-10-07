@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trading Journal | Jerni Business Holdings</title>
+<link rel="icon" type="image/png" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+#journal-table { width:100%; border-collapse:collapse; font-size:13.5px; }
+#journal-table th, #journal-table td { padding:12px 14px; border-bottom:1px solid var(--line); text-align:left; }
+#journal-table th { font-family:var(--font-mono); text-transform:uppercase; font-size:11px; letter-spacing:.05em; color:var(--ink-soft); }
+.pill { padding:3px 10px; border-radius:999px; font-size:12px; font-weight:700; }
+.pill-win { background:rgba(34,197,94,.12); color:#15803d; }
+.pill-loss { background:rgba(239,68,68,.12); color:#b91c1c; }
+</style>
+</head>
+<body>
+<div class="announce">PLAN THE TRADE TRADE THE PLAN <a href="memberships.html">Get Started →</a></div>
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="assets/logo-icon.png" alt="Jerni Business Holdings" class="brand-logo">Jerni Business Holdings</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Trading Education</a>
+      <a href="journal.html" class="active">Trading Journal</a>
+      <a href="dashboard.html">Dashboard</a>
+      <a href="copier.html">Trade Copier Education</a>
+      <a href="memberships.html">Memberships</a>
+      <a href="resources.html">Resources</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="memberships.html" class="btn btn-primary btn-sm">Get Started</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap max-w-lg center">
+    <span class="tag">Digital Trading Journal</span>
+    <h1 style="font-size:40px;">Stop Relying on Memory. Start Learning From Your Data.</h1>
+    <p>Every trade, every reason, every mistake — recorded in one structured place so your next decision is informed by evidence.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-bottom:0;">
+  <div class="wrap">
+    <div class="photo-frame" style="aspect-ratio:16/7; border-radius:var(--radius-lg); overflow:hidden; box-shadow:var(--shadow-soft); border:1px solid var(--line);">
+      <img src="assets/photos/photo-trade-plan.jpg" alt="Phone and laptop showing a trade plan checklist beside a handwritten trading journal" style="width:100%; height:100%; object-fit:cover; display:block;">
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0;">
+  <div class="wrap grid grid-2" style="align-items:start;">
+    <div class="card">
+      <h3 style="font-size:18px;">What the journal records</h3>
+      <ul style="display:grid; gap:10px; font-size:14.5px; color:var(--ink-soft);">
+        <li>• Entry and exit prices</li>
+        <li>• Instrument traded</li>
+        <li>• Long or short position</li>
+        <li>• Position size</li>
+        <li>• Stop-loss and profit target</li>
+        <li>• Planned risk-to-reward</li>
+        <li>• Chart screenshot upload</li>
+        <li>• Strategy and setup tags</li>
+        <li>• Emotions before and after the trade</li>
+        <li>• Mistakes and lessons learned</li>
+        <li>• Rule-following tracking</li>
+        <li>• Pre-trade and post-trade checklists</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="font-size:18px;">New Journal Entry — Preview</h3>
+      <div class="field"><label>Instrument</label><input type="text" placeholder="e.g. ES, EUR/USD, AAPL"></div>
+      <div class="grid grid-2" style="gap:14px;">
+        <div class="field"><label>Direction</label><select><option>Long</option><option>Short</option></select></div>
+        <div class="field"><label>Position Size</label><input type="text" placeholder="e.g. 2 contracts"></div>
+        <div class="field"><label>Entry Price</label><input type="text" placeholder="0.00"></div>
+        <div class="field"><label>Exit Price</label><input type="text" placeholder="0.00"></div>
+      </div>
+      <div class="field"><label>Emotion Before / After</label><input type="text" placeholder="e.g. Confident → Relieved"></div>
+      <div class="field"><label>Chart Screenshot</label><input type="file"></div>
+      <div class="field"><label>Lessons Learned</label><textarea rows="3" placeholder="What would you repeat? What would you change?"></textarea></div>
+      <button class="btn btn-primary btn-block" type="button" onclick="alert('This is a design preview — journal entries save once connected to your member account.')">Save Journal Entry</button>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark section">
+  <div class="wrap center max-w">
+    <h2 style="font-size:28px;">Stop relying on memory. Start learning from your data.</h2>
+    <a href="memberships.html" class="btn btn-primary" style="margin-top:20px;">Get Started</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><a href="index.html" class="brand" style="color:var(--white); margin-bottom:14px;"><img src="assets/logo-icon.png" alt="Jerni Business Holdings" class="brand-logo">Jerni Business Holdings</a><p style="font-size:13.5px; max-width:260px;">Trading education, structured planning tools, and performance analytics built for discipline and accountability.</p><div class="social-row"><a href="#">𝕏</a><a href="#">◍</a><a href="#">▶</a><a href="#">in</a></div></div>
+      <div><h4>Education</h4><a href="education.html">Course Library</a><a href="resources.html">Resources</a><a href="results.html">Testimonials</a></div>
+      <div><h4>Platform</h4><a href="journal.html">Trading Journal</a><a href="dashboard.html">Dashboard</a><a href="copier.html">Trade Copier Education</a></div>
+      <div><h4>Support</h4><a href="faq.html">FAQ</a><a href="contact.html">Contact Us</a><a href="memberships.html">Memberships</a></div>
+      <div><h4>Legal</h4><a href="legal.html#terms">Terms of Service</a><a href="legal.html#privacy">Privacy Policy</a><a href="legal.html#risk">Risk Disclosure</a><a href="legal.html">All Policies</a></div>
+    </div>
+    <p class="disclaimer" style="margin-top:44px;">Jerni Business Holdings provides educational content, analytical tools, and general information only. Nothing on this website constitutes financial, legal, tax, brokerage, or investment advice. Trading involves substantial risk and may result in the loss of some or all invested capital. Past performance is not indicative of future results. No profits, payouts, funding approvals, or trading outcomes are guaranteed.</p>
+    <div class="footer-bottom"><span>© 2026 Jerni Business Holdings. All rights reserved.</span><span><a href="#" style="display:inline;">Cookie Preferences</a></span></div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+</body>
+</html>

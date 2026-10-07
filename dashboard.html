@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Performance Dashboard | Jerni Business Holdings</title>
+<link rel="icon" type="image/png" href="assets/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+.cal { display:grid; grid-template-columns:repeat(7,1fr); gap:6px; }
+.cal .day { aspect-ratio:1; border-radius:8px; display:flex; align-items:center; justify-content:center; font-size:11px; font-family:var(--font-mono); color:rgba(231,225,251,.7); }
+.cal .pos { background:rgba(34,197,94,.18); color:#4ade80; }
+.cal .neg { background:rgba(239,68,68,.18); color:#f87171; }
+.cal .flat { background:rgba(255,255,255,.04); }
+</style>
+</head>
+<body>
+<div class="announce">PLAN THE TRADE TRADE THE PLAN <a href="memberships.html">Get Started →</a></div>
+<header class="nav">
+  <div class="wrap">
+    <a href="index.html" class="brand"><img src="assets/logo-icon.png" alt="Jerni Business Holdings" class="brand-logo">Jerni Business Holdings</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="education.html">Trading Education</a>
+      <a href="journal.html">Trading Journal</a>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="copier.html">Trade Copier Education</a>
+      <a href="memberships.html">Memberships</a>
+      <a href="resources.html">Resources</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="memberships.html" class="btn btn-primary btn-sm">Get Started</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="section-dark" style="padding:64px 0 56px;">
+  <div class="wrap">
+    <div class="center max-w-lg" style="margin-bottom:36px;">
+      <span class="eyebrow" style="justify-content:center;">Performance Dashboard</span>
+      <h1 style="color:var(--white);">All Your Accounts. One Honest View.</h1>
+      <p>Review win rate, profit and loss, consistency, and account trends across every connected account.</p>
+    </div>
+
+    <div class="grid grid-4" style="margin-bottom:20px;">
+      <div class="glass" style="padding:20px;"><span class="stat-label">Account Balance</span><span class="stat-num" data-count="48210" data-suffix="">0</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Daily P&amp;L</span><span class="stat-num pos" data-count="312" data-suffix="">0</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Weekly P&amp;L</span><span class="stat-num pos" data-count="940" data-suffix="">0</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Monthly P&amp;L</span><span class="stat-num pos" data-count="2680" data-suffix="">0</span></div>
+    </div>
+    <div class="grid grid-4" style="margin-bottom:20px;">
+      <div class="glass" style="padding:20px;"><span class="stat-label">Total Trades</span><span class="stat-num" data-count="184">0</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Winning / Losing</span><span class="stat-num" style="font-size:22px;">107 / 77</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Win Rate</span><span class="stat-num pos" data-count="58.2" data-decimals="1" data-suffix="%">0%</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Profit Factor</span><span class="stat-num" data-count="1.71" data-decimals="2">0</span></div>
+    </div>
+    <div class="grid grid-4" style="margin-bottom:20px;">
+      <div class="glass" style="padding:20px;"><span class="stat-label">Average Win</span><span class="stat-num pos" data-count="196" data-suffix="">0</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Average Loss</span><span class="stat-num neg" data-count="-104" data-suffix="">0</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Avg. Risk-to-Reward</span><span class="stat-num" style="font-size:22px;">1 : 1.9</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Rule-Compliance Score</span><span class="stat-num pos" data-count="86" data-suffix="%">0%</span></div>
+    </div>
+
+    <div class="glass" style="padding:22px;">
+      <span class="stat-label">Equity Curve</span>
+      <svg viewBox="0 0 500 140" style="width:100%; height:140px; margin-top:10px;">
+        <path d="M0,110 L50,100 L100,105 L150,80 L200,88 L250,55 L300,65 L350,35 L400,44 L450,18 L500,26" fill="none" stroke="#8B5CF6" stroke-width="2.5"/>
+        <path d="M0,110 L50,100 L100,105 L150,80 L200,88 L250,55 L300,65 L350,35 L400,44 L450,18 L500,26 L500,140 L0,140 Z" fill="url(#eg)" opacity="0.3"/>
+        <defs><linearGradient id="eg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0"/></linearGradient></defs>
+      </svg>
+    </div>
+
+    <div class="grid grid-3" style="margin-top:20px; gap:20px;">
+      <div class="glass" style="padding:20px;"><span class="stat-label">Performance by Instrument</span><p style="font-size:13px; margin-top:10px; color:rgba(231,225,251,.7);">ES +$1,240 · NQ +$860 · EUR/USD −$210 · AAPL +$390</p></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Performance by Strategy</span><p style="font-size:13px; margin-top:10px; color:rgba(231,225,251,.7);">Range Break +$1,410 · Trend Pullback +$320 · Opening Drive +$550</p></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Performance by Time of Day</span><p style="font-size:13px; margin-top:10px; color:rgba(231,225,251,.7);">Morning session +$1,680 · Afternoon session +$600</p></div>
+    </div>
+    <div class="grid grid-2" style="margin-top:20px; gap:20px;">
+      <div class="glass" style="padding:20px;"><span class="stat-label">Best Day</span><span class="stat-num pos" data-count="612" data-suffix="">0</span></div>
+      <div class="glass" style="padding:20px;"><span class="stat-label">Worst Day</span><span class="stat-num neg" data-count="-284" data-suffix="">0</span></div>
+    </div>
+
+    <p class="disclaimer" style="margin-top:24px;">All values shown above are sample or user-reported figures for demonstration purposes and are not independently verified. Past performance does not predict future results.</p>
+  </div>
+</section>
+
+<section class="section-dark" style="padding:0 0 64px;">
+  <div class="wrap">
+    <div class="photo-banner">
+      <img src="assets/photos/photo-gold-discipline.jpg" alt="Trading desk with gold bars, a leather-bound trading plan journal, and a phone and laptop showing live charts">
+      <div class="photo-caption">
+        <h3>Discipline. Execution. Results.</h3>
+        <p>The dashboard exists to make this loop visible — plan it, trade it, review it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDGE SCORE -->
+<section class="section-dark section">
+  <div class="wrap" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center;">
+    <div>
+      <span class="eyebrow">Edge Score in your dashboard</span>
+      <h2>Most Traders Lose Because of Emotions, Not Strategy</h2>
+      <p>After you log trades, your portal scores discipline so you can see when you are in the green zone.</p>
+    </div>
+    <div class="glass reveal" style="padding:28px; text-align:center;">
+      <span class="tag" style="background:rgba(196,181,253,.14); color:#C4B5FD;">Behavioral Edge Score</span>
+      <svg viewBox="0 0 220 130" style="width:100%; max-width:280px; margin:18px auto 6px;">
+        <path d="M 20,110 A 90,90 0 0 1 65,32.06" fill="none" stroke="#EF4444" stroke-width="16" stroke-linecap="round"/>
+        <path d="M 65,32.06 A 90,90 0 0 1 155,32.06" fill="none" stroke="#F59E0B" stroke-width="16" stroke-linecap="round"/>
+        <path d="M 155,32.06 A 90,90 0 0 1 200,110" fill="none" stroke="#22C55E" stroke-width="16" stroke-linecap="round"/>
+        <line x1="110" y1="110" x2="167" y2="70" stroke="#F5F3FF" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="110" cy="110" r="7" fill="#F5F3FF"/>
+      </svg>
+      <div class="flex-between" style="font-size:11px; font-family:var(--font-mono); color:rgba(231,225,251,.6); text-transform:uppercase; letter-spacing:.04em; margin-bottom:16px;">
+        <span>Pressure</span><span>Mixed</span><span style="color:#4ade80;">Green zone</span>
+      </div>
+      <p style="font-size:13px; margin-bottom:20px;">Updates from your trade log and mindset tags — the same gauge on your dashboard after Get Started.</p>
+      <a href="memberships.html" class="btn btn-primary btn-block">Get Started →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap grid grid-3">
+    <div class="card reveal"><h3 style="font-size:16px;">Account Reporting</h3><p style="font-size:14px;">Organize multiple trading accounts and view combined or individual performance.</p></div>
+    <div class="card reveal"><h3 style="font-size:16px;">Custom Filters</h3><p style="font-size:14px;">Break results down by account, date, market, strategy, or outcome.</p></div>
+    <div class="card reveal"><h3 style="font-size:16px;">Exportable Reports</h3><p style="font-size:14px;">Download PDF performance summaries for your own records.</p></div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div><a href="index.html" class="brand" style="color:var(--white); margin-bottom:14px;"><img src="assets/logo-icon.png" alt="Jerni Business Holdings" class="brand-logo">Jerni Business Holdings</a><p style="font-size:13.5px; max-width:260px;">Trading education, structured planning tools, and performance analytics built for discipline and accountability.</p><div class="social-row"><a href="#">𝕏</a><a href="#">◍</a><a href="#">▶</a><a href="#">in</a></div></div>
+      <div><h4>Education</h4><a href="education.html">Course Library</a><a href="resources.html">Resources</a><a href="results.html">Testimonials</a></div>
+      <div><h4>Platform</h4><a href="journal.html">Trading Journal</a><a href="dashboard.html">Dashboard</a><a href="copier.html">Trade Copier Education</a></div>
+      <div><h4>Support</h4><a href="faq.html">FAQ</a><a href="contact.html">Contact Us</a><a href="memberships.html">Memberships</a></div>
+      <div><h4>Legal</h4><a href="legal.html#terms">Terms of Service</a><a href="legal.html#privacy">Privacy Policy</a><a href="legal.html#risk">Risk Disclosure</a><a href="legal.html">All Policies</a></div>
+    </div>
+    <p class="disclaimer" style="margin-top:44px;">Jerni Business Holdings provides educational content, analytical tools, and general information only. Nothing on this website constitutes financial, legal, tax, brokerage, or investment advice. Trading involves substantial risk and may result in the loss of some or all invested capital. Past performance is not indicative of future results. No profits, payouts, funding approvals, or trading outcomes are guaranteed.</p>
+    <div class="footer-bottom"><span>© 2026 Jerni Business Holdings. All rights reserved.</span><span><a href="#" style="display:inline;">Cookie Preferences</a></span></div>
+  </div>
+</footer>
+<script src="assets/script.js"></script>
+<style>.reveal{opacity:0; transform:translateY(16px); transition:opacity .6s ease, transform .6s ease;} .reveal.in{opacity:1; transform:none;}</style>
+</body>
+</html>
